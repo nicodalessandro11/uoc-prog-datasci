@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<mean area &le; 697.8<br/>gini = 0.451<br/>samples = 341<br/>value = [117, 224]>, fillcolor="#a0d0f3"] ;
+1 [label=<mean symmetry &le; 0.204<br/>gini = 0.217<br/>samples = 250<br/>value = [31, 219]>, fillcolor="#55abe9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<mean texture &le; 19.59<br/>gini = 0.134<br/>samples = 221<br/>value = [16, 205]>, fillcolor="#48a5e7"] ;
+1 -> 2 ;
+3 [label=<gini = 0.026<br/>samples = 152<br/>value = [2, 150]>, fillcolor="#3c9ee5"] ;
+2 -> 3 ;
+4 [label=<gini = 0.323<br/>samples = 69<br/>value = [14, 55]>, fillcolor="#6bb6ec"] ;
+2 -> 4 ;
+5 [label=<mean texture &le; 20.21<br/>gini = 0.499<br/>samples = 29<br/>value = [15, 14]>, fillcolor="#fdf7f2"] ;
+1 -> 5 ;
+6 [label=<gini = 0.42<br/>samples = 20<br/>value = [6, 14]>, fillcolor="#8ec7f0"] ;
+5 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 9<br/>value = [9, 0]>, fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label=<mean texture &le; 16.235<br/>gini = 0.104<br/>samples = 91<br/>value = [86, 5]>, fillcolor="#e78845"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<mean symmetry &le; 0.175<br/>gini = 0.49<br/>samples = 7<br/>value = [3, 4]>, fillcolor="#cee6f8"] ;
+8 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 3<br/>value = [0, 3]>, fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label=<gini = 0.375<br/>samples = 4<br/>value = [3, 1]>, fillcolor="#eeab7b"] ;
+9 -> 11 ;
+12 [label=<mean symmetry &le; 0.152<br/>gini = 0.024<br/>samples = 84<br/>value = [83, 1]>, fillcolor="#e5833b"] ;
+8 -> 12 ;
+13 [label=<gini = 0.278<br/>samples = 6<br/>value = [5, 1]>, fillcolor="#ea9a61"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 78<br/>value = [78, 0]>, fillcolor="#e58139"] ;
+12 -> 14 ;
+}
